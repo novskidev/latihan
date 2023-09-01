@@ -23,12 +23,12 @@ body {
       ),
       url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg)
 }
-    
 
-label {
-    display: block;
-    margin: 1em auto;
- 
+.stack input {
+    display: inline;
+}
+.stack p {
+    text-align: left;
 }
 
 #name, #email, #number {
@@ -50,10 +50,6 @@ select {
     min-height: 2em;
 }
 
-input[type="checkbox"] {
-    display: block;
-    align-items: center;
-  }
 
 textarea {
     display: block;
