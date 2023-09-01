@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Software Engineer Survey Form</h1>
+    <p id="description">Software Engineer job Demanding in 2023</p>
+    <form id="survey-form" method="post" action="#">
+      <fieldset>
+        <label id="name-label"
+          >Enter Your Name:
+          <input id="name" required placeholder="Enter your name" type="text"
+        /></label>
+        <label id="email-label"
+          >Enter Your Email:
+          <input
+            id="email"
+            placeholder="Enter your email"
+            required
+            type="email"
+        /></label>
+        <label id="number-label"
+          >Enter Your Current Age:
+          <input
+            id="number"
+            placeholder="Enter your age (optional)"
+            min="13"
+            max="35"
+            type="number"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label for=""
+          >Which option best describes your current role?<select
+            name=""
+            id="dropdown"
+          >
+            <option value="">Select current role?</option>
+            <option value="Fullstack">Fullstack Developer</option>
+            <option value="frontend">Front End Developer</option>
+            <option value="backend">Back End Developer</option>
+            <option value="mobile">Mobile Developer</option>
+          </select></label
+        >
+        <label for="">
+          Have you ever join bootcamp before?
+          <input type="radio" name="yes-no" id="" value="Yes" /> Yes
+          <input type="radio" name="yes-no" id="" value="no" /> No
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="">
+          Stack technology that you used?
+          <input type="checkbox" value="VCS" />Visual Code Studio
+          <input type="checkbox" value="git" />Github / Gitlab
+          <input type="checkbox" value="react" />React.JS
+          <input type="checkbox" value="node" />Node.JS
+        </label>
+        <label for=""
+          >What do you think about your job?
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
